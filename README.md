@@ -1,4 +1,4 @@
-# simpleInterestCalculator
+# Simple Interest Calculator
 Java Spring Boot Microservice for Simple Interest Calculation
 
 Simple Java Spring boot application.
