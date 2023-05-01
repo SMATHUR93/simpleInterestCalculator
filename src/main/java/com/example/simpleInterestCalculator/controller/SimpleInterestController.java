@@ -32,7 +32,7 @@ public class SimpleInterestController {
     public ResponseEntity<Double> getCompoundInterest(@RequestParam double principal, @RequestParam double rate, @RequestParam double time) {
         double simpleInterest = simpleInterestService.calculateSimpleInterest(principal, rate, time);
         ResponseEntity<Double> response = restTemplate.getForEntity(
-                "http://sb-service-url/compound-interest?principal={principal}&rate={rate}&time={time}&simpleInterest={simpleInterest}",
+                "http://172.18.0.3:5002/compound-interest?principal={principal}&rate={rate}&time={time}&simpleInterest={simpleInterest}",
                 Double.class, principal, rate, time, simpleInterest);
         if (response.getStatusCode() == HttpStatus.OK) {
             return ResponseEntity.ok(response.getBody());
