@@ -71,7 +71,7 @@ Architecture Diagram:
 +----------------------+   |   +----------------------+   |   +----------------------+
 |                      |   |   |                      |   |   |                      |
 |      SA API          |   |   |      SB API          |   |   |      SC API          |
-|      (Port: 8080)    |   |   |      (Port: 8081)    |   |   |      (Port: 8082)    |
+|      (Port: 5001)    |   |   |      (Port: 5002)    |   |   |      (Port: 5003)    |
 |                      |   |   |                      |   |   |                      |
 +----------------------+   |   +----------------------+   |   +----------------------+
 
@@ -89,7 +89,7 @@ Deployment Diagram:
 | Simple Interest (SA)  |       | Compound Interest (SB) |       | Profit and Loss (SC)  |
 |                       |       |                       |       |                       |
 | Docker Container      |       | Docker Container      |       | Docker Container      |
-| Port: 8080            |       | Port: 8081            |       | Port: 8082            |
+| Port: 5001            |       | Port: 5002            |       | Port: 5003            |
 +-----------------------+       +-----------------------+       +-----------------------+
 
 
